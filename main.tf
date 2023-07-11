@@ -9,14 +9,9 @@ resource "cloudflare_record" "dns_record" {
   ttl     = each.value.ttl
 
   provisioner "local-exec" {
-    command = "sleep 180"
+    command = "sleep 300"
   }
 
-  lifecycle {
-    ignore_changes = [
-      proxied # this is in place as this value needs changing
-    ]
-  }
 }
 
 locals {
