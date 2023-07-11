@@ -1,0 +1,10 @@
+dns_record = {
+    key = {
+        name = "record name"
+        proxied = true / false
+        ttl 1 / 3600
+        type = "record type"
+        value = "record value"
+        zone_id = "cloudflare zone id"
+    }
+}
